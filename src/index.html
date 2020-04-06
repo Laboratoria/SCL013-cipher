@@ -1,56 +1,109 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Vantruar</title>
-    <link rel="stylesheet" href="style.css" />
-    
-  </head>
-  <body>
-    <div id="root">
-      <header>
-        <img src="logo-pequeño.jpg" alt="logo-vantruar">
-      </header>
-      
-     
-      
-      
-      <main id="content">
-        
+
+<head>
+  <meta charset="utf-8">
+  <title>Vantruar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<link rel="shortcut icon" href="icono.jpg">
+
+<body>
+  <div id="root">
+    <header>
+      <img src="banner.jpg" alt=logo-vantuar>
+
+    </header>
+
+    <main id="content">
+
+      <section id="home">
         <form>
-          <label for="name">Ingresa tu nombre de usuario</label>
-          <input id="username" type="Obtener código" placeholder="Nombre de usuario">
-          <button id="code-btn">Obtener código</button>
+          <h3>
+            <label for="name">Ingresa tu nombre de usuario</label>
+            <input id="username" type="Obtener código" placeholder="Nombre de usuario">
+            <button id="code-btn">Obtener código</button></h3>
+          <br>
+          <div id="random-code"></div>
 
 
-          
-          
+
+
+          <h5>Envía este código a la persona con la que quieras hablar</h5>
+
 
           <button id="enter-btn" type="submit">Ingresar</button>
 
-          <div>
-            <p id="random-code">XXXX</p>
-          </div>
-
-        </form>
-      </main>
 
 
+          <h3>¿Ya tienes un código? Ingresalo aquí</h3>
+          <label for="name"></label>
+          <input id="Code" type="Entrar" placeholder="Codigo">
+          <button id="code-btn-enter">Entrar</button></h3>
+      </form>
+    </section>
 
-      <footer>
-        <h3>Los mensajes de esta página se encuentran cifrados para mayor seguridad. Ahora, solo disfruta la experiencia Vantruar &reg;</h3>
-      </footer>
+    <br>
+
+    <section id="app" class="hidden">
+        <h4> Selecciona el numero de desplazamiento</h4>
+        <select id="desplazamiento" name="Desplazamiento">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+        </select>
+   
+      <div id="cipher-decipher">
+        <h4>Escribe tu texto acá</h4>
+        <textarea id="input"></textarea>
+
+        <div id="button-box">
+          <button id="cipher-btn">Cifrar</button>
+          <button id="decipher-btn">Descifrar</button>
+        </div>
+
+        <textarea id="output" name=""></textarea>
+      
+        <div id="back-button.box">
+          <button id="back-btn">Volver al inicio</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  <footer>
+    <h3>Los mensajes de esta página se encuentran cifrados para mayor seguridad. Ahora, solo disfruta la experiencia
+      Vantruar &reg;</h3>
+    <h5>Vantruar &reg; no se hace responsable por problemas y/o consecuencias extramaritales que podrían tener las
+      partes. El uso de Vantruar &reg; es exclusiva responsabilidad usuario.</h5>
+  </footer>
 
 
 
 
+  </div>
+  <script src="index.js" type="module"></script>
+  <script src="cipher.js" type="module"></script>
+  <script src="index.js" type="back"></script>
+</body>
 
-
-
-
-
-
-    </div>
-    <script src="index.js" type="module"></script>
-  </body>
 </html>

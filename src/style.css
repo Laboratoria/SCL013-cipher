@@ -1,0 +1,87 @@
+* {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    text-align: center;
+    font-size: 16px;
+    font-family: Century Gothic;
+  }
+  header{
+
+      text-align: center;
+  }
+
+
+  body {
+      background-color: #F2F0F1;
+      border-left: solid 300px #A6082D;
+      border-right: solid 300px #A6082D;
+
+  box-sizing: border-box 2px #a6082D;
+
+  
+  }
+  button {
+    background-color: #E3D0DF;
+    padding: 0;
+    border: solid 2px #8E708E;
+    border-radius: 57px 57px 57px 57px;
+    moz-border-radius: 57px 57px 57px 57px;
+    webkit-border-radius: 57px 57px 57px 57px;
+    width: 150px;
+    font-family: Century gothic;
+  }
+
+  textarea{
+  
+    Background-color: #e3d0df
+    font-size: 16 px ;
+    height: 300px;
+    padding: 0;
+    border: solid 2px #8E708E;
+    border-radius: 30px 30px 30px 30px;
+    moz-border-radius: 30px 30px 30px 30px;
+    webkit-border-radius: 30px 30px 30px 30px;
+    width: 500px;
+    font-size: 20px;
+    font-family: Century gothic;
+
+  } 
+  input {
+    Background-color: #e3d0df
+    font-size: 16 px ;
+    padding: 0;
+    border: solid 2px #8E708E;
+    border-radius: 30px 30px 30px 30px;
+    moz-border-radius: 30px 30px 30px 30px;
+    webkit-border-radius: 30px 30px 30px 30px;
+    font-size: 20px;
+    font-family: Century gothic;
+    text-align: center;
+
+  }
+
+  select {
+    Background-color: #e3d0df
+    font-size: 16 px ;
+    padding: 0;
+    border: solid 2px #8E708E;
+    border-radius: 30px 30px 30px 30px;
+    moz-border-radius: 30px 30px 30px 30px;
+    webkit-border-radius: 30px 30px 30px 30px;
+    font-size: 20px;
+    font-family: Century gothic;
+    text-align: center;
+  
+
+  }
+
+  
+  footer {
+ 
+    border-top: solid 3px #8E708E  ;
+  }

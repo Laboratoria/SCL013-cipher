@@ -11,7 +11,7 @@ const cipher = {
       encodedString += String.fromCharCode(x);
     }
     console.log(encodedString);//para probar
-    output.textContent = encodedString;
+    output.innerHTML = `${encodedString}`;
   },
   
   decode: function (offset, string) {
@@ -30,7 +30,7 @@ const cipher = {
       decodedString += String.fromCharCode(x);
     }
     console.log(decodedString); //para probar
-    output.textContent = decodedString;
+    output.innerHTML = `${decodedString}`;
     
   }
 } 

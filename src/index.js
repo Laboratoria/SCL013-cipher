@@ -27,14 +27,6 @@ cipherBtn.addEventListener("click", myCodingFn);
 decipherBtn.addEventListener("click", myDecodingFn);
 
 
-function myCodingFn() {
-  return cipher.encode(select.value, input.value);
-}
-
-function myDecodingFn() {
-  return cipher.decode(select.value, input.value);
-}
-
 //FUNCIONES
 
 //Generar código
@@ -53,8 +45,8 @@ function giveCodeFn(event) {
 
 //Ingresar a la app
 function enterFn(event) {
-  home.setAttribute("class", "hidden");
-  app.removeAttribute("class", "hidden");
+  home.setAttribute("class", "hidden"); //oculta el código de ingreso
+  app.removeAttribute("class", "hidden"); //muestra la app
   event.preventDefault();
 
 
@@ -67,5 +59,13 @@ function backFn() {
 
 }
 
+//Retornar funciones de cifrar/descifrar 
+function myCodingFn() {
+  return cipher.encode(select.value, input.value);
+}
+
+function myDecodingFn() {
+  return cipher.decode(select.value, input.value);
+}
 console.log(cipher);
 export default output;

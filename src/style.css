@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+    background-color: #F2F0F1;
+}
+
+header, div {
+  text-align: center;
+}
+
+button {
+  background-color: #E3D0DF;
+  padding: 0.5rem;
+  border: solid 2px #8E708E;
+
+}

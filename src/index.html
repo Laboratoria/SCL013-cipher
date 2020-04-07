@@ -1,14 +1,72 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+    <head>
+    </head>
+    <body>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+
+        <script type="text/javascript" src="index.js"></script>
+
+        <script type="text/javascript" src="cipher.js"></script>
+
+<!--aqui comienza el pop up-->
+
+    <input type= "checkbox" id="cerrar">
+    <label for="cerrar" id="btn-cerrar">x</label>
+    <div class="modal">
+        <div class="contenido">
+            <img src="/popup.jpg">
+        </div>
     </div>
-    <script src="index.js" type="module"></script>
-  </body>
+
+<!--aqui termina el pop up-->
+
+        <script src="script.js"></script>
+        <section id="logo">
+        <img Class="fondo" src="/fondo3.jpg">
+<!---Texto inicial-->
+     <div class="intro"> <p align="center"> <br>¿Necesitas crear una invitación en clave para que nadie la descubra?</br> ¡Bienvenidas a Sweet Secret Party!. <br> En esta web podrás crear, codificar y decodificar información para tu invitación a fiestas secretas.</br></p>
+    </div>
+<!---incluye primeras cajas de texto-->
+        <div class="container1" id="con1">
+          <!----->
+            <div>
+                <textarea class="codificar1" name="codificar1" id="codificar1" cols="30" rows="10" placeholder="Escribe tu información aquí!"></textarea>
+            </div>
+            <div>
+                <textarea class ="codificado1" name="codificado1" id="codificado1" cols="30" rows="10" readonly></textarea>
+            </div>
+            <div>
+              <!--boton codficar-->
+                <input type="submit" class="button name="enviar1" id="enviar1" value="Codificar">
+            </div>
+        </div>
+        <!---textos centrales y desplazamiento-->
+        <div class="container3" id="con3">
+            <div>
+                <h1>Codificar</h1>
+            </div>
+            <!---caja donde se ingresan los numeros de desplazamientos-->
+            <div>
+                <input type="number" name="desplazamiento" id="desplazamiento" min="1" max="100" value="1"> Elige los desplazamientos</input>
+            </div>
+            <div>
+                <h1>Decodificar</h1>
+            </div>
+        </div>
+<!---incluye segundas cajas de textos-->      
+        <div class="container2" id="con2">
+            <!---caja para ingresar texto-->
+            <div>
+                <textarea class="codificar2" name="codificar2" id="codificar2" cols="30" rows="10" placeholder="Recibiste un código? léelo aquí!"></textarea>
+            </div>
+            <!---caja con codigo listo-->  
+            <div>
+                <textarea class="codificado2" name="codificado2" id="codificado2" cols="30" rows="10" readonly></textarea>
+            </div>
+            <!---boton decodificar-->
+            <div>
+                <input type="submit" class="button name="enviar2" id="enviar2" value="Decodificar">
+            </div>
+        </div>
+    </body>
 </html>

@@ -1,14 +1,87 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+<html lang="es">
+
+<!--Se agregan metadatos, título en pestaña y hoja de estilos-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado César</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<!--Inicio cuerpo sitio web -->   
+<section id="sec1">
+    <div class="figure">
+        <img src="C:\Users\Pamela\Desktop\Laboratoria\BOOTCAMP\Cifrado cesar\logoblanco.png"
+             width="200">
     </div>
-    <script src="index.js" type="module"></script>
-  </body>
+        <div class="contenedor-texto">
+            <h1 id= "bienvenida">Envía y recibe mensajes de forma segura</h1>
+            <br>
+            <p id= "bajada">Mensaje Secreto es una aplicación de mensajería instantánea para smartphones, en la que se envían 
+                y reciben mensajes de texto a través de Internet, estos mensajes pueden ser encriptados y desencriptados mediante 
+                el Cifrado César.<br><br> 
+                El Cifrado César es un tipo de cifrado por sustitución, es decir que cada letra del texto 
+                original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento) 
+                más adelante en el mismo alfabeto. Dentro del chat debes elegir el número de desplazamiento 
+                (que llamaremos clave), procuren definirlo previamente.<br><br>
+                Para garantizar tu seguridad y anonimato debes ingresar al chat con un nombre de usuario
+                que permanecerá sólo lo que dure la sesión.</p>
+            <br>
+
+<!--Botón, recibe el nombre y envia a otra pantalla-->
+    <input id="nombre" placeholder="Ingresa tu nombre de usuario" autocomplete="off"> 
+    <button class="designButton" onclick="setNombre()"><a id="aceptar" title="Click to do something" 
+        href="#sec2">Aceptar</a></button>
+        </div>
+        </section>
+
+<!--Pantalla 2, muestra nombre y ventanas de chat interactivas-->
+<section id="sec2">
+    <div class="contenedor-chat-uno">
+        <img src="C:\Users\Pamela\Desktop\Laboratoria\BOOTCAMP\Cifrado cesar\celu.png"
+        width=256px>
+        <p id="saludo">Hola</p>
+        <hr>
+        <br>
+  <form action="#" method="get" autocomplete="off" onsubmit="return false;">
+    <table class="noborder">
+      <tbody>
+        <tr>
+            <td><input type="text" id="shift" placeholder="Escribe tu clave"></td>
+        </tr>        
+        <tr>
+          <td><textarea id="text" placeholder="Escribe tu mensaje"></textarea></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button"value="Encriptar" id="cifrar" onclick="doCrypt(false);"/>
+            <input type="button" value="Desencriptar" id="descifrar" onclick="doCrypt(true);"/>
+            <button type="submit" id="enviar-uno">Enviar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+  </div>
+</body>      
+
+<div class="contenedor-chat-dos">
+        <img src="C:\Users\Pamela\Desktop\Laboratoria\BOOTCAMP\Cifrado cesar\celu-2.png"
+        width=256px>
+        <p id="saludo">Usuario anónimo</p>
+        <hr>
+        <br>
+    <input type="number" placeholder="Escribe la clave" id="numero">
+    <br>
+    <textarea id="mensaje" placeholder="Escribe tu mensaje"></textarea>
+    <br>
+    <button type="submit" id="caesarCipher">Cifrar</button>
+    <button type="submit" id="caesarCipher">Descifrar</button>
+    <button type="submit" id="enviar-dos">Enviar</button>
+</div>
+</section>
+<script src="app.js"></script>
+</body>
 </html>

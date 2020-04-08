@@ -57,3 +57,4 @@ function doCrypt(isDesencriptar) {
   //obtenemos el resultado    
       return result;
   }
+

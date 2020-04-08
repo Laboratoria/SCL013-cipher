@@ -1,0 +1,156 @@
+*{ /* *selector universal */
+    margin:0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow: hidden; /*deja solo en una pantalla*/
+}
+
+body{
+    background: linear-gradient(120deg, #471d27 0%, #171b24 100%);
+    font-family: 'Roboto', Helvetica, sans-serif;
+
+}
+
+.figure{
+    width: ;
+    position: relative;
+    top: ;
+    bottom:210px ;
+    right:;
+    left: 40px ;
+    display: block;
+    padding:;
+    align-items: center;
+}
+
+#bienvenida{
+    color:#ce4a61;
+    font-size: 36px;
+    text-align: justify;
+}
+
+#bajada{
+    color:white;
+    font-size: 14px;
+    text-align: left;
+    width: 70%;
+    line-height: 20px;
+}
+
+#saludo{
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    padding: 15px;
+    width: 70%;
+}
+
+.designButton{
+    display: inline-block;
+    padding: 7px;
+    width: 100px;
+    text-align: center;
+    border: 1px solid #ce4a61;
+    border-radius: 5px;
+    background: #ce4a61;
+}
+
+::placeholder{
+    color: white;
+    opacity: 60%;
+    font-size: 12px;
+}
+
+#aceptar{
+    width: 80%;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#nombre{
+    display: inline-block;
+    padding: 7px;
+    width: 200px;
+    text-align: justify;
+    border: 1px solid #ce4a61;
+    border-radius: 5px;
+    background: none;
+    color: white;
+}
+
+#sec2{
+    background-color: #eccfc1;
+}
+
+#shift,#numero{
+    display: inline-block;
+    padding: 7px;
+    width: 150px;
+    text-align: justify;
+    border: 1px solid #ce4a61;
+    border-radius: 5px;
+    background: none;
+    color: white;
+}
+
+#text,#mensaje{
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    height: 115px;
+    width: 230px;
+    text-align: justify;
+    border: 1px solid #ce4a61;
+    border-radius: 5px;
+    background: none;
+    color: white;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+.contenedor-texto{
+    position: relative;
+    top: ;
+    bottom: ;
+    right:;
+    left: 130px ;
+}
+
+#cifrar,#descifrar,#acepto,#enviar-uno,#enviar-dos,#caesarCipher{
+    display: inline-block;
+    padding: 7px;
+    width: 80px;
+    font-size: 11px;
+    text-align: center;
+    border: 1px solid #ce4a61;
+    border-radius: 5px;
+    background: #ce4a61;
+    color: white;
+}
+
+.contenedor-chat-uno{
+    background: linear-gradient(120deg, #471d27 0%, #171b24 100%);
+    padding: 18px;
+    width: 250px;
+    height: 490px;
+    margin: 80px;
+}
+
+.contenedor-chat-dos{
+    background: linear-gradient(120deg, #471d27 0%, #171b24 100%);
+    padding: 18px;
+    width: 250px;
+    height: 490px;
+    margin: 200px;
+}
+
+section{
+    height: 660px;
+    display: flex;
+    padding: 0 50px 0 50px;
+    align-items: center;
+}
+

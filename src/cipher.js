@@ -6,6 +6,8 @@ const cipher = {
     console.log(offset, string); //para probar
     string = string.toUpperCase();
     let encodedString = "";
+
+    //caballo --> CABALLO - > C
     for (let i = 0; i < string.length; i++) {
       let x = string.charCodeAt(i);
       x = (x - 65 + parseInt(offset)) % 26 + 65;
@@ -18,13 +20,14 @@ const cipher = {
   decode: function (offset, string) {
     console.log(offset, string); //para probar
 
+    //BJLASNDO -> CABALLO BONITO
     string = string.toUpperCase();
     let decodedString = "";
     for (let i = 0; i < string.length; i++) {
       let x = string.charCodeAt(i);
       x = (x - 65 - offset) % 26 + 65;
       if (x === 58) {
-        x = 32;
+        x = 32;     
       } else if (x === 60) {
         x = 86;
       }

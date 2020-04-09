@@ -11,7 +11,7 @@ const codeBtn = document.getElementById("code-btn");
 const enterBtn = document.getElementById("enter-btn");
 const cipherBtn = document.getElementById("cipher-btn");
 const decipherBtn = document.getElementById("decipher-btn");
-const sendBtn = document.getElementById("send-btn");
+//const sendBtn = document.getElementById("send-btn");
 const backBtn = document.getElementById("back-btn");
 const input = document.getElementById("input");
 const output = document.getElementById("output");
@@ -67,5 +67,5 @@ function myCodingFn() {
 function myDecodingFn() {
   return cipher.decode(select.value, input.value);
 }
-console.log(cipher);
+
 export default output;

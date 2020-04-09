@@ -8,10 +8,12 @@ const cipher = {
     //2. Itera cada letra y espacio del mensaje
     for (let i = 0; i < string.length; i++) {
       let ascii = string.charCodeAt(i);
-      
+  
       //3.a. Si el cód. ascii es 32 (espacio), se queda como espacio
       if (ascii === 32){
         ascii = 32;
+      } else if (ascii === 209) {
+        ascii = 209;
       } else { //3.b. Si el cód. ascii no es 32 (espacio), se cifra
         ascii = (ascii - 65 + parseInt(offset)) % 26 + 65;
       }
@@ -33,7 +35,9 @@ const cipher = {
       //3.a. Si el cód. ascii es 32 (espacio), se queda como espacio
       if (ascii === 32) {
         ascii = 32;
-      } else if (ascii != 32) { //3.b. Si el cód. ascii no es 32 (espacio), se descifra
+      } else if (ascii === 209) {
+          ascii = 209;
+        } else if (ascii != 32) { //3.b. Si el cód. ascii no es 32 (espacio), se descifra
         ascii = (ascii - 65 - parseInt(offset)) % 26 + 65;
       }
 

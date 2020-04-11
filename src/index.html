@@ -7,41 +7,52 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <link rel="shortcut icon" href="icono.jpg">
-
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed&display=swap" rel="stylesheet">
 <body>
   <div id="root">
     <header>
-      <img src="banner1.jpeg" alt="logo-vantuar">
+      <a href="index.html"><img src="banner1.jpeg" alt="logo-vantuar"></a>
 
     </header>
 
 
-    <main id="content">
+    <main id="main-homepage">
 
       <section id="home">
         <form>
-          <h3>
-            <label for="name">Ingresa tu nombre de usuario</label>
-            <input id="username" type="Obtener código" placeholder="Nombre de usuario">
-            <button id="code-btn">Obtener código</button></h3>
+          <div id="new-user-box">
+            <div id="get-code-box">
+              <h3><label for="name">Ingresa tu nombre de usuario:</label></h3>
+              <input id="username" type="Obtener código" placeholder="Nombre de usuario">
+              <button id="code-btn">Obtener código</button>
+            </div>
+            
+          
+            
           <br>
-          <div id="random-code"></div>
+
+            <div id="enter-code-box" class="hidden">
+              <h3>Envía este código a la otra parte.</h3>
+                <h1 id="random-code"></h1>
+
+                <h3>Ingresa a la aplicación.</h3>
+              
+
+              <button id="enter-btn" type="submit">Entrar</button>
+            </div>
+            
+          </div>
+          
 
 
-
-
-          <h5>Envía este código a la persona con la que quieras hablar</h5>
-
-
-          <button id="enter-btn" type="submit">Ingresar</button>
-
-
-
-          <h3>¿Ya tienes un código? Ingresalo aquí</h3>
-          <label for="name"></label>
-          <input id="Code" type="Entrar" placeholder="Codigo">
-          <!-- <button id="code-btn-enter">Entrar</button> -->
-      </form>
+          <div id="user-box">
+            <h3>¿Ya tienes un código? Ingresalo aquí</h3>
+            <label for="name"></label>
+            <input id="user-code" placeholder="Codigo">
+            <button id="code-btn-enter">Entrar</button>
+          </div>
+    
+        </form>
     </section>
 
     <br>
@@ -85,18 +96,18 @@
 
         </select>
    
-      <div id="cipher-decipher">
-        <h4>Escribe tu texto acá</h4>
-        <textarea id="input"></textarea>
+        <div id="cipher-decipher">
+          <h4>Escribe tu texto acá</h4>
+          <textarea id="input"></textarea>
 
         <div id="button-box">
           <button id="cipher-btn">Cifrar</button>
           <button id="decipher-btn">Descifrar</button>
         </div>
 
-        <textarea id="output" name=""></textarea>
+          <textarea id="output"></textarea>
       
-        <div id="back-button.box">
+        <div id="back-button-box">
           <button id="back-btn">Volver al inicio</button>
         </div>
       </div>
@@ -108,8 +119,8 @@
   <footer>
     <h3>Los mensajes de esta página se encuentran cifrados para mayor seguridad. Ahora, solo disfruta la experiencia
       Vantruar &reg;</h3>
-    <h5>Vantruar &reg; no se hace responsable por problemas y/o consecuencias extramaritales que podrían tener las
-      partes. El uso de Vantruar &reg; es exclusiva responsabilidad usuario.</h5>
+    <h5>Vantruar &reg; no se hace responsable por problemas y/o consecuencias extramaritales causados a las
+      partes.<br>El uso de Vantruar &reg; es exclusiva responsabilidad del usuario.</h5>
   </footer>
 
 

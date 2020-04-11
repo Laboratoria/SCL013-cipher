@@ -2,6 +2,8 @@ import output from "./index.js";
 
 const cipher = {
   encode: function (offset, string) {
+
+    
     //1. Pasa el mensaje a mayúscula
     string = string.toUpperCase();
     let encodedString = "";
@@ -14,7 +16,12 @@ const cipher = {
         ascii = 32;
       } else if (ascii === 209) {
         ascii = 209;
-      } else { //3.b. Si el cód. ascii no es 32 (espacio), se cifra
+      } else if (ascii >= 97 && ascii <= 122) {
+        //3.b. Extra: para cifrar minúsculas
+        ascii = (ascii - 122 + parseInt(offset)) % 26 + 122;
+
+        }
+        else if (ascii >= 65 && ascii <= 90) { //3.c. Para cifrar mayúsculas
         ascii = (ascii - 65 + parseInt(offset)) % 26 + 65;
       }
       //4. Cada letra cifrada se guarda en encodedString
@@ -22,6 +29,7 @@ const cipher = {
     }
     //5. Se muestra encodedString en el text area de resultado
     output.innerHTML = `${encodedString}`;
+    window.scrollTo(0, 1000); //6. Para mover navegador al resultado
   },
   
   decode: function (offset, string) {

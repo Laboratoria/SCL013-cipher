@@ -58,7 +58,7 @@ const cipher = {
     }
     //&. Se muestra decodedString en el text area de resultado
     output.innerHTML = `${decodedString}`;
-    
+    window.scrollTo(0, 1000); //6. Para mover navegador al resultado
   }
 } 
 

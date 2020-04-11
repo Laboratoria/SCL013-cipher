@@ -1,7 +1,6 @@
 import cipher from './cipher.js';
 
-//
-window.onload = window.scrollTo(0, 0);
+
 //VARIABLES GLOBALES
 let code;
 

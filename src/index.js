@@ -30,8 +30,12 @@ codeBtn.addEventListener("click", giveCodeFn);
 codeEnterBtn.addEventListener("click", enterWithCodeFn);
 enterBtn.addEventListener("click", enterFn);
 backBtn.addEventListener("click", backFn);
-cipherBtn.addEventListener("click", myCodingFn);
-decipherBtn.addEventListener("click", myDecodingFn);
+cipherBtn.addEventListener("click", () => { 
+  output.innerHTML = cipher.encode(select.value, input.value);
+} );
+decipherBtn.addEventListener("click", () => {
+  output.innerHTML = cipher.decode(select.value, input.value);
+});
 
 
 //FUNCIONES
@@ -85,14 +89,5 @@ function backFn() {
 
 }
 
-//Retornar funciones de cifrar/descifrar 
-function myCodingFn() {
-  return cipher.encode(select.value, input.value);
-  
-}
-
-function myDecodingFn() {
-  return cipher.decode(select.value, input.value);
-}
 
 export default output;

@@ -1,5 +1,5 @@
-import output from "./index.js";
-
+/* import output from "./index.js";
+ */
 const cipher = {
   encode: function (offset, string) {
 
@@ -28,8 +28,8 @@ const cipher = {
       encodedString += String.fromCharCode(ascii);
     }
     //5. Se muestra encodedString en el text area de resultado
-    output.innerHTML = `${encodedString}`;
-    window.scrollTo(0, 1000); //6. Para mover navegador al resultado
+    return encodedString;
+    //window.scrollTo(0, 1000); //6. Para mover navegador al resultado
   },
   
   decode: function (offset, string) {
@@ -57,8 +57,8 @@ const cipher = {
       decodedString += String.fromCharCode(ascii);
     }
     //&. Se muestra decodedString en el text area de resultado
-    output.innerHTML = `${decodedString}`;
-    window.scrollTo(0, 1000); //6. Para mover navegador al resultado
+    return decodedString;
+    //window.scrollTo(0, 1000); //6. Para mover navegador al resultado
   }
 } 
 

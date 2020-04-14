@@ -10,7 +10,7 @@ window.onload = function(){
         btnEncode.addEventListener('click', () => {
             
             let ingresoEn = document.getElementById("codificar1").value;
-            let desplaza = document.getElementById("desplazamiento").value;
+            let desplaza = document.getElementById("offset").value;
             let send = window.cipher.encode(ingresoEn,desplaza);
             textoEn.innerHTML = send;
         })
@@ -18,11 +18,11 @@ window.onload = function(){
         btnDecode.addEventListener('click', () => {
         
             let ingresoDe = document.getElementById("codificar2").value;
-            let desplaza = document.getElementById("desplazamiento").value;
+            let desplaza = document.getElementById("offset").value;
             let send = window.cipher.decode(ingresoDe,desplaza);
             textoDe.innerHTML = send;
         })
     
     
     }
-    hola cote
+    

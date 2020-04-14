@@ -16,7 +16,12 @@ const cipher = {
         ascii = 32;
       } else if (ascii === 209) {
         ascii = 209;
-      } else if (ascii >= 97 && ascii <= 122) {
+      } else if (ascii === 44) {
+        ascii = 44;      
+      }else if (ascii === 46){
+        ascii = 46;
+      }
+      else if (ascii >= 97 && ascii <= 122) {
         //3.b. Extra: para cifrar minúsculas
         ascii = (ascii - 122 + parseInt(offset)) % 26 + 122;
 
@@ -24,6 +29,8 @@ const cipher = {
         else if (ascii >= 65 && ascii <= 90) { //3.c. Para cifrar mayúsculas
         ascii = (ascii - 65 + parseInt(offset)) % 26 + 65;
       }
+
+
       //4. Cada letra cifrada se guarda en encodedString
       encodedString += String.fromCharCode(ascii);
     }
@@ -45,6 +52,10 @@ const cipher = {
         ascii = 32;
       } else if (ascii === 209) {
           ascii = 209;
+        }else if (ascii === 44) {
+          ascii = 44;      
+        }else if (ascii === 46){
+          ascii = 46;
         } else if (ascii != 32) { //3.b. Si el cód. ascii no es 32 (espacio), se descifra
         ascii = (ascii - 65 - parseInt(offset)) % 26 + 65;
       }

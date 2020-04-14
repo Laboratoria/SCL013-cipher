@@ -52,18 +52,19 @@ const cipher = {
         ascii = 32;
       } else if (ascii === 44) {// coma
         ascii = 44; 
+      } else if (ascii === 46) {// punto
+        ascii = 46; 
       } else if (ascii === 209) {
         ascii = 209;      
-        } else if (ascii === 46){// punto
-          ascii = 46;
         } else if (ascii != 32) { //3.b. Si el cód. ascii no es 32 (espacio), se descifra
         ascii = (ascii - 65 - parseInt(offset)) % 26 + 65;
+        //4. Si el cód. ascii descifrado es menor que 65, pero no es 32, se le suma 26 para que no vaya hacia atrás (más allá de la "A") y se devuelva por Z, Y, X... etc.
+        if (ascii < 65 && ascii != 32) {
+          ascii = ascii + 26;
+        }
       }
 
-      //4. Si el cód. ascii descifrado es menor que 65, pero no es 32, se le suma 26 para que no vaya hacia atrás (más allá de la "A") y se devuelva por Z, Y, X... etc.
-      if (ascii < 65 && ascii != 32 && ascii != 44 && ascii !=46) {
-        ascii = ascii + 26;
-      }
+      
       //5. Cada letra descifrada se guarda en decodedString
       decodedString += String.fromCharCode(ascii);
     }

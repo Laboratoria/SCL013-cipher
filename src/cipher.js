@@ -1,5 +1,6 @@
 /* import output from "./index.js";
  */
+//DEBERÍA FUNCIONAR
 const cipher = {
   encode: function (offset, string) {
 

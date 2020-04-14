@@ -1,6 +1,6 @@
 import cipher from './cipher.js';
 
-
+//DEBERÍA FUNCIONAR
 //VARIABLES GLOBALES
 let code;
 

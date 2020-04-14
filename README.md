@@ -32,3 +32,5 @@ Este servicio resuelve el problema de los usuarios de una manera fácil, rápida
 
 ## FeedBack
 Según el testeo de la app web se llegó a la conclusión que era mejor dejar solo una página funcional, donde se explicara como funciona la web y como puede interactuar el usuario con nuestra plataforma en el mismo lugar.
+
+.

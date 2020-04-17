@@ -2,49 +2,49 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Secret Lovers</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Secret Lovers</title>
 </head>
 
 <body>
-    <header class="encabezado">
-        <img src="./imagenes/banner3.jpg" width="100%">
-    </header>
-    <div id="principal">
-        <button id="inicio">Comenzar</button>
-    </div>
-    <form>
-        <div id="secundario">
-            <div class="grilla" id="desp">
-                <div>
-                    <h2>MENSAJE A CIFRAR</h2>
-                    <textarea id="mensaje_cifrar" cols="30" rows="10" class="grid-item"></textarea>
-                </div>
-
-                <div>
-                    <h2>MENSAJE CIFRADO</h2>
-                    <textarea id="mensaje_cifrado" readonly="readonly" cols="30" rows="10" class="grid-item"></textarea>
-                </div>
-            </div>
-            <br>
-            <div class="super">
-                <p>Desplazamiento: <input type="number" size="1" min="1" max="40" id="desplazar"></p>
-                <input type="button" class="grid-item" id="Cifrar" value="Cifrar">
-                <input type="button" class="grid-item" id="Descifrar" value="Descifrar">
-                <input type="reset" id="eliminar" value="Limpiar">
-            </div>
+  <header class="encabezado">
+    <img src="./imagenes/banner3.jpg" width="100%">
+  </header>
+  <div id="principal">
+    <button id="inicio">Comenzar</button>
+  </div>
+  <form>
+    <div id="secundario">
+      <div class="grilla" id="desp">
+        <div>
+          <h2>MENSAJE A CIFRAR</h2>
+          <textarea id="mensaje_cifrar" cols="30" rows="10" class="grid-item"></textarea>
         </div>
-    </form>
-    <br>
-    <br>
 
-    <footer class="pie">
-        Copyright 2020 - Secret Lovers - Todos los derechos reservados
-    </footer>
-    <script type="module" src="index.js"></script>
-    <script type="module" src="cipher.js"></script>
+        <div>
+          <h2>MENSAJE CIFRADO</h2>
+          <textarea id="mensaje_cifrado" readonly="readonly" cols="30" rows="10" class="grid-item"></textarea>
+        </div>
+      </div>
+      <br>
+      <div class="super">
+        <p>Desplazamiento: <input type="number" size="1" min="1" max="40" id="desplazar"></p>
+        <input type="button" class="grid-item" id="Cifrar" value="Cifrar">
+        <input type="button" class="grid-item" id="Descifrar" value="Descifrar">
+        <input type="reset" id="eliminar" value="Limpiar">
+      </div>
+    </div>
+  </form>
+  <br>
+  <br>
+
+  <footer class="pie">
+    Copyright 2020 - Secret Lovers - Todos los derechos reservados
+  </footer>
+  <script type="module" src="index.js"></script>
+  <script type="module" src="cipher.js"></script>
 </body>
 
 </html>

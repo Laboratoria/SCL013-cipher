@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');  
+
+  body{
+    background-image: url(https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+    background-size: cover;
+    font-family:'Open Sans Condensed', sans-serif;;
+    font-size: 15px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:#433856;
+}
+
+.titulo{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 100px;
+    text-align: center;
+    color: #fff;
+    margin: 60px 0 0 0;
+    text-shadow: 1px 4px #999;
+}
+
+.number{
+    font-family:'Open Sans Condensed', sans-serif;;
+    font-size: 15px;
+}
+
+  /*Cajas de texto para codificar*/
+  .container1 {
+    height: 26%;
+    display: flex; /* sin "display" no se puede utilizar flex-box en CSS */
+    justify-content: center;
+    align-items: flex-end;
+    }
+  /*Cajas de textos para decodificar*/  
+  .container2 {
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+  }
+  /*Textos y desplazamientos del centro*/
+  .container3 {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-around; 
+      font-size: 20px;
+  }
+  /*texto de inicio*/
+  .intro {
+    display: flex;
+    justify-content:flex-end;
+    flex-direction: column;
+    text-align: center;
+    font-size: 25px;
+    color:#433856;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-top: 0;
+  }
+  /*Este div le da margenes a todos los div*/
+  div {
+      margin-left: 0.7%;
+  }
+
+  /* esto es para el pop up */    
+   .modal{
+       width: 100%;
+       height: 100vh;
+       background: rgba(0,0,0,0,8);
+  
+       position: absolute;
+       top:0;
+       left: 0;
+  
+       display: flex;
+  
+       animation: modal 2s 1s forwards;
+       visibility: hidden;
+       opacity: 0;
+   }
+  
+   .contenido {
+       margin: auto;
+       width: 40%;
+       height: 40%;
+       background: white;
+       border-radius: 10px;
+  
+   }
+  
+   #cerrar {
+       display: none;
+   }
+  #cerrar + label {
+      position: fixed;
+      color: #fff;
+      font-size: 25px;
+      text-align: center;
+      font-family: sans-serif;
+      z-index: 50;
+      background: lightcoral;
+      height: 30px;
+      width: 30px;
+      line-height: 30px;
+      border-radius: 50%;
+      right: 330px;
+      cursor: pointer;
+  
+      animation: modal 2s 1s forwards;
+      visibility: hidden;
+      opacity: 0;
+  
+  }
+  
+  #cerrar:checked + label, #cerrar:checked ~ .modal {
+      display: none;
+  }
+  
+  @keyframes modal {
+      100% {
+          visibility: visible;
+          opacity: 1; 
+      }
+  }
+  /*aqui termina el pop up*/ 
+  
+  /*Botones*/
+  .button{
+      background-color: white;
+      color:lightcoral; 
+      border-radius: 5px;
+      font-size:18px;
+      padding: 5px;
+      cursor: pointer;
+      font-family: 'Open Sans Condensed', sans-serif;
+  }
+
+  .button:hover {
+      background-color: #180538;
+  }
+  
+    h1{
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 1px 2px #999;
+    }
+
+ footer{
+     height: 40px;
+     background: #9493a5;
+ }   
+
+ @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+.codificar1{
+    display: flex;
+    flex-direction: column;
+
+}
+.codificado1{
+    display: flex;
+    flex-direction: column;
+}
+
+.codificar2{
+    display: flex;
+    flex-direction: column;
+}
+
+.codificado2{
+    display: flex;
+    flex-direction: column;
+}
+}

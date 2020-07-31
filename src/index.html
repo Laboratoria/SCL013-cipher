@@ -7,10 +7,15 @@
         <title>Sweet Secret Party</title>
     </head>
     <body>
+        <p class="titulo">Sweet Secret Party</p>
 
-        <script type="text/javascript" src="index.js"></script>
+        <!---Texto inicial-->
+     <div class="intro"> <p >¿Necesitas crear una invitación en clave para que nadie la descubra?</p> 
+        
+        ¡Bienvenidas a Sweet Secret Party!. <br> En esta web podrás crear, codificar y decodificar información para tu invitación a fiestas secretas.</br></p>
+    </div>
 
-        <script type="text/javascript" src="cipher.js"></script>
+
 <!--aqui comienza el pop up-->
 
     <input type= "checkbox" id="cerrar">
@@ -23,14 +28,9 @@
 
 <!--aqui termina el pop up-->
 
-        <script src="script.js"></script>
-        <section id="logo">
-        <img Class="fondo" src="fondo3.jpg">
-<!---Texto inicial-->
-     <div class="intro"> <p ><br>¿Necesitas crear una invitación en clave para que nadie la descubra?</p> 
-        
-        ¡Bienvenidas a Sweet Secret Party!. <br> En esta web podrás crear, codificar y decodificar información para tu invitación a fiestas secretas.</br></p>
-    </div>
+            <div>
+                <h1>Codificar</h1>
+            </div>
 <!---incluye primeras cajas de texto-->
         <div class="container1" id="con1">
           <!----->
@@ -47,12 +47,10 @@
         </div>
         <!---textos centrales y desplazamiento-->
         <div class="container3" id="con3">
-            <div>
-                <h1>Codificar</h1>
-            </div>
+          
             <!---caja donde se ingresan los numeros de desplazamientos-->
             <div>
-                <input type="number" id="desplazamiento" min="1" max="100" value="1"> Elige los desplazamientos</input>
+                <input class="number" type="number" id="desplazamiento" min="1" max="100" value="1"> Elige los desplazamientos</input>
             </div>
             <div>
                 <h1>Decodificar</h1>
@@ -70,8 +68,13 @@
             </div>
             <!---boton decodificar-->
             <div>
-                <input type="submit" class="button id="enviar2" value="Decodificar">
+                <input type="submit" class="button" id="enviar2" value="Decodificar">
             </div>
         </div>
+    <footer>
+    <p>&#169; 2020 Creado por Alejanda y María José para Laboratoria</p>
+    </footer>
+        <script type="text/javascript" src="index.js"></script>
+        <script type="text/javascript" src="cipher.js"></script>    
     </body>
 </html>
